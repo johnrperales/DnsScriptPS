@@ -1,0 +1,1 @@
+Get-Content C:\MyPowershell\IP_Address.txt | ForEach-Object {([system.net.dns]::GetHostByAddress($_)).hostname + ' ==>  ' + ($_) >> c:\MyPowershell\hostname.txt}
